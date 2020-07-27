@@ -267,6 +267,7 @@ public class ElectricityController {
 		return mv;
 	}
 	
+	
 	@RequestMapping("/reportrequest")
 	public ModelAndView fetchReport(@RequestParam("reportType") String reportType, @RequestParam("billMonth") String date) {
 		ModelAndView mv = new ModelAndView();
