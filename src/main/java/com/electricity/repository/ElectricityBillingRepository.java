@@ -24,6 +24,7 @@ public interface ElectricityBillingRepository extends JpaRepository<BillingDetai
 	@Query("select bd from BillingDetail bd where username=?1 and paymentInd = 'N'")
 	public List<BillingDetail> fetchElectricityBill(String username);
 
+	
 	@Transactional
 	@Modifying
 	@Query("update BillingDetail set paymentInd=?3, modifiedBy=?4, modifiedOn=?5 where username=?1 and billMonth=?2 and billChangeInd='N'")
