@@ -1,0 +1,11 @@
+@charset "ISO-8859-1";
+
+form {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+p {
+	    text-align: center;
+}
